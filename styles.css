@@ -1,0 +1,94 @@
+ #container {
+            display: flex;
+        }
+
+        #top-image {
+            border-left: 1px solid white;
+            border-right: 1px solid white;
+            width: 100%;
+            height: auto;
+            aspect-ratio: 1 / 1.2;
+            box-sizing: border-box;
+            object-fit: cover;
+        }
+
+        #bottom-images-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px
+        }
+
+        #bottom-images-container img {
+            min-width: 0;
+            width: 100%;
+            object-fit: cover;
+            aspect-ratio: 1 / 1.2;
+        }
+
+        #left-column, #right-column {
+            flex: 0 1 15%;
+        }
+
+        #middle-column {
+            flex: 1;
+            min-width: 0;
+            box-sizing: border-box;
+        }
+
+        #recipe-container {
+            padding-left: 15px;
+            padding-right: 15px;
+            padding-bottom: 25px;
+            border-bottom: 25px solid pink;
+            font-size: 14px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+        }
+
+        p {
+            color:maroon;
+            font-size: x-large;
+            font-weight: bold;
+        }
+
+        #summary {
+            padding:5px;
+            background-color:rgb(243, 243, 243);
+        }
+
+        ul,
+        ol {
+            padding-left: 20px;
+            margin: 10px;
+            line-height: 2.0;
+        }
+
+        h2 {
+            font-weight: bold;
+        }
+
+        .desktop-only {
+            display: none;
+        }
+
+        @media (min-width: 440px) {
+            .desktop-only {
+                display: flex;
+                background-color: pink;
+            }
+
+            #bottom-images-container {
+                flex-direction: row;
+                align-items: center;
+            }
+
+            #top-image {
+                height: 400px;
+                aspect-ratio: auto;
+            }
+
+            #bottom-images-container img {
+                aspect-ratio: 1 / 1;
+            }
+        }
