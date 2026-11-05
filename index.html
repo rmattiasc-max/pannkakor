@@ -8,22 +8,40 @@
   </head>
 
   <body>
-    <div id="container">
-      <div class="desktop-only"></div>
-      <main>
-        <img
-          id="top-image"
-          src="images/pannkakor_med_blabar.jpeg"
-          alt="Pannkakor med blåbär och grädde på en tallrik."
-        />
-        <article>
-          <header>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Recept</a></li>
+          <li><a href="#">Om sajten</a></li>
+          <li><a href="#">Dela recept</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <article>
+        <section class="sections-container">
+          <section class=>
+            <img
+              id="top-image"
+              src="images/pannkakor_med_blabar.jpeg"
+              alt="Pannkakor med blåbär och grädde på en tallrik."
+            />
+          </section>
+          <section>
             <h1>Enkelt recept på pannkakor</h1>
             <p id="summary">
               Gör traditionella tunna pannkakor med detta enkla och goda
               pannkaksrecept.
             </p>
-          </header>
+            <section id="usps">
+                <div class="usp">4 port</div>
+                <div class="usp">30 min</div>
+                <div class="usp">Lätt</div>
+            </section>
+          </section>
+        </section>
+        <section class="sections-container">
           <section>
             <h2 id="ingredient-list">Ingredienser</h2>
             <p>För 4 portioner</p>
@@ -64,22 +82,28 @@
               <li>Servera med sylt, bär eller frukt.</li>
             </ol>
           </section>
-          <section>
-            <h2>Serveringsförslag</h2>
-            <div id="bottom-images-container">
-              <img
-                src="images/pannkakor_utan_topping.jpeg"
-                alt="Ihopvikta pannkakor utan topping på en tallrik."
-              />
-              <img
+        </section>
+        <h2>Serveringsförslag</h2>
+        <section class="sections-container">
+            <section>
+                <img
+              id="bottom-image-2"
+              src="images/pannkakor_utan_topping.jpeg"
+              alt="Ihopvikta pannkakor utan topping på en tallrik."
+            />
+            </section>
+            <section>
+                <img
+                id="bottom-image-1"
                 src="images/pannkakor-grundrecept.webp"
                 alt="Pannkakor med florsocker på en tallrik."
-              />
-            </div>
-          </section>
-        </article>
-      </main>
-      <div class="desktop-only"></div>
-    </div>
+                />
+            </section>
+        </section>
+      </article>
+    </main>
+    <footer>
+      <p>© 2024 Pannkakor AB</p>
+    </footer>
   </body>
 </html>
