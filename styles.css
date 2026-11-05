@@ -9,6 +9,7 @@ nav ul {
 
 .sections-container {
   display: flex;
+  margin-inline: auto;
   section {
     width: 50%;
     margin: 15px;
@@ -18,7 +19,7 @@ nav ul {
 #usps {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
+  gap: 15px;
 }
 
 .usp {
@@ -30,9 +31,10 @@ nav ul {
 #top-image,
 #bottom-image-1,
 #bottom-image-2 {
-  width: 75%;
+  width: 100%;
   aspect-ratio: 1 / 1.2;
   object-fit: cover;
+  display: block;
 }
 
 article {
