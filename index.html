@@ -4,78 +4,84 @@
     <link rel="stylesheet" href="styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Momo+Signature&display=swap"
+      rel="stylesheet"
+    />
     <title>Pannkakor - Enkelt recept</title>
   </head>
 
   <body>
-      <main>
-        <header>
+    <main>
+      <header>
+        <img
+          id="top-image"
+          src="images/pannkakor_med_blabar.jpeg"
+          alt="Pannkakor med blåbär och grädde på en tallrik."
+        />
+        <h1>Enkelt recept på pannkakor</h1>
+        <p id="summary">
+          Gör traditionella tunna pannkakor med detta enkla och goda
+          pannkaksrecept.
+        </p>
+      </header>
+      <article>
+        <section>
+          <h2 id="ingredient-list">Ingredienser</h2>
+          <p id="portioner">För 4 portioner</p>
+          <ul aria-labelledby="ingredient-list">
+            <li>
+              <label> <input type="checkbox" /> 2 1/2 dl vetemjöl </label>
+            </li>
+            <li>
+              <label> <input type="checkbox" /> 1/2 tsk salt </label>
+            </li>
+            <li>
+              <label> <input type="checkbox" /> 6 dl mjölk </label>
+            </li>
+            <li>
+              <label> <input type="checkbox" /> 3 ägg </label>
+            </li>
+            <li>
+              <label> <input type="checkbox" /> smör (till stekning) </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" /> sylt, bär eller frukt till servering
+              </label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2 id="recipe-steps">Så här gör du</h2>
+          <ol aria-labelledby="recipe-steps">
+            <li>Blanda mjöl och salt i en bunke.</li>
+            <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
+            <li>Vispa i resten av mjölken och äggen.</li>
+            <li>Låt smeten vila ca 10 minuter.</li>
+            <li>
+              Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
+              eller pannkakspanna.
+            </li>
+            <li>Servera med sylt, bär eller frukt.</li>
+          </ol>
+        </section>
+        <section>
+          <h2>Serveringsförslag</h2>
+          <div id="bottom-images-container">
             <img
-              id="top-image"
-              src="images/pannkakor_med_blabar.jpeg"
-              alt="Pannkakor med blåbär och grädde på en tallrik."
+              src="images/pannkakor_utan_topping.jpeg"
+              alt="Ihopvikta pannkakor utan topping på en tallrik."
             />
-            <h1>Enkelt recept på pannkakor</h1>
-            <p id="summary">
-              Gör traditionella tunna pannkakor med detta enkla och goda
-              pannkaksrecept.
-            </p>
-          </header>
-        <article>
-          <section>
-            <h2 id="ingredient-list">Ingredienser</h2>
-            <p id="portioner">För 4 portioner</p>
-            <ul aria-labelledby="ingredient-list">
-              <li>
-                <label> <input type="checkbox" /> 2 1/2 dl vetemjöl </label>
-              </li>
-              <li>
-                <label> <input type="checkbox" /> 1/2 tsk salt </label>
-              </li>
-              <li>
-                <label> <input type="checkbox" /> 6 dl mjölk </label>
-              </li>
-              <li>
-                <label> <input type="checkbox" /> 3 ägg </label>
-              </li>
-              <li>
-                <label> <input type="checkbox" /> smör (till stekning) </label>
-              </li>
-              <li>
-                <label>
-                  <input type="checkbox" /> sylt, bär eller frukt till servering
-                </label>
-              </li>
-            </ul>
-          </section>
-          <section>
-            <h2 id="recipe-steps">Så här gör du</h2>
-            <ol aria-labelledby="recipe-steps">
-              <li>Blanda mjöl och salt i en bunke.</li>
-              <li>Vispa i hälften av mjölken och vispa till en slät smet.</li>
-              <li>Vispa i resten av mjölken och äggen.</li>
-              <li>Låt smeten vila ca 10 minuter.</li>
-              <li>
-                Stek tunna pannkakor i lite smör, för varje pannkaka, i en stek-
-                eller pannkakspanna.
-              </li>
-              <li>Servera med sylt, bär eller frukt.</li>
-            </ol>
-          </section>
-          <section>
-            <h2>Serveringsförslag</h2>
-            <div id="bottom-images-container">
-              <img
-                src="images/pannkakor_utan_topping.jpeg"
-                alt="Ihopvikta pannkakor utan topping på en tallrik."
-              />
-              <img
-                src="images/pannkakor-grundrecept.webp"
-                alt="Pannkakor med florsocker på en tallrik."
-              />
-            </div>
-          </section>
-        </article>
-      </main>
+            <img
+              src="images/pannkakor-grundrecept.webp"
+              alt="Pannkakor med florsocker på en tallrik."
+            />
+          </div>
+        </section>
+      </article>
+    </main>
   </body>
 </html>
