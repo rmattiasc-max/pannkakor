@@ -30,11 +30,12 @@
     <main>
       <article id="content" class="grid-container">
         <img
-          class="square-image grid-cell-1"
+          class="square-image"
           src="https://picsum.photos/1200"
           alt="Pannkakor med blåbär och grädde på en tallrik."
+          style="grid-area:one;"
         />
-        <section class="grid-cell-2">
+        <section style="grid-area:two;">
           <h1>Enkelt recept på pannkakor</h1>
           <p class="summary">
             Gör traditionella tunna pannkakor med detta enkla och goda
@@ -46,7 +47,7 @@
             <div class="usp">Lätt</div>
           </section>
         </section>
-        <section class="grid-cell-3">
+        <section style="grid-area:three;">
           <h2 id="ingredient-list">Ingredienser</h2>
           <p class="portions">För 4 portioner</p>
           <ul class="checkbox-list" aria-labelledby="ingredient-list">
@@ -72,7 +73,7 @@
             </li>
           </ul>
         </section>
-        <section class="grid-cell-4">
+        <section style="grid-area:four;">
           <h2 id="recipe-steps">Så här gör du</h2>
           <ol aria-labelledby="recipe-steps">
             <li>Blanda mjöl och salt i en bunke.</li>
@@ -86,9 +87,9 @@
             <li>Servera med sylt, bär eller frukt.</li>
           </ol>
         </section>
-        <figure class="grid-cell-5">
+        <figure style="grid-area:five;">
           <h2>Serveringsförslag</h2>
-          <section class="sections-container">
+          <section class="sections-container" style="margin-block-end: 1rem;">
             <img
               class="rectangular-image"
               src="https://picsum.photos/600"

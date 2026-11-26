@@ -28,7 +28,7 @@
     </header>
 
     <main>
-      <article id="content">
+      <div id="content">
         <div class="banner-container">
           <img
             src="https://picsum.photos/1000"
@@ -36,38 +36,33 @@
           />
           <h1>Pannkakor och andra recept</h1>
         </div>
-        <div class="sections-container">
-          <fieldset class="radio-list-container">
-            <legend>Välj måltid</legend>
-            <ul class="radio-list">
-              <li>
-                <input
-                  type="radio"
-                  name="meal"
-                  id="breakfast"
-                  value="breakfast"
-                />
-                <label for="breakfast">Frukost</label>
-              </li>
-              <li>
-                <input type="radio" name="meal" id="dessert" value="dessert" />
-                <label for="dessert">Efterrätt</label>
-              </li>
-              <li>
-                <input type="radio" name="meal" id="dinner" value="dinner" />
-                <label for="dinner">Middag</label>
-              </li>
-              <li>
-                <input type="radio" name="meal" id="fika" value="fika" />
-                <label for="fika">Fika</label>
-              </li>
-              <li>
-                <input type="radio" name="meal" id="all" value="all" checked />
-                <label for="all">Allt</label>
-              </li>
-            </ul>
-          </fieldset>
-        </div>
+
+        <fieldset class="radio-list-container">
+          <legend>Välj måltid</legend>
+          <form class="radio-list">
+            <div>
+              <input
+                type="radio"
+                name="meal"
+                id="breakfast"
+                value="breakfast"
+              />
+              <label for="breakfast">Frukost</label>
+            </div>
+            <div>
+              <input type="radio" name="meal" id="dinner" value="dinner" />
+              <label for="dinner">Middag</label>
+            </div>
+            <div>
+              <input type="radio" name="meal" id="dessert" value="dessert" />
+              <label for="dessert">Efterrätt</label>
+            </div>
+            <div>
+              <input type="radio" name="meal" id="fika" value="fika" />
+              <label for="fika">Fika</label>
+            </div>
+          </form>
+        </fieldset>
         <section class="grid-container-2">
           <div class="card">
             <img
@@ -106,7 +101,7 @@
             <p class="margin-m">15 min</p>
           </div>
         </section>
-        <section class="sections-container margin-xl">
+        <section class="sections-container">
           <section class="justify-center margin-block-m">
             <div class="max-content text-center">
               <h2>Pannkakssajten</h2>
@@ -131,7 +126,7 @@
             </div>
           </section>
         </section>
-      </article>
+      </div>
     </main>
     <footer class="margin-article-inline ffmain fss">
       <p>2024 Pannkakor AB</p>

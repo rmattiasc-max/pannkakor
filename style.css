@@ -28,13 +28,17 @@
   --border-radius-form: 0.5rem;
 
   /* color */
-  --color-lightgrey: #f3f3f3;
-  --color-beige: #dbc29d;
-  --color-alert: #d93025;
-  --color-formfield-border: #888;
-  --color-fieldset-border: #ccc;
-  --color-form-border: #ddd;
-  --color-accessibility-outline: #2563eb;
+  --color-lightgrey: oklch(96.416% 0.00011 271.152);
+  --color-alert: oklch(57.844% 0.20625 29);
+  --color-formfield-border: oklch(62.675% 0.00007 271.152);
+  --color-fieldset-border: oklch(84.522% 0.0001 271.152);
+  --color-form-border: oklch(89.755% 0.0001 271.152);
+  --color-accessibility-outline: oklch(54.616% 0.21529 262.896);
+  --color-background: blanchedalmond;
+  --color-heading: maroon;
+
+  --accent-current: oklch(82.593% 0.05689 77.485);
+  --accent-hover: color-mix(in oklch, var(--accent-current) 50%, var(--color-background) 50%);
 
   /* aspect ratio */
   --ar-square: 1/1;
@@ -167,10 +171,10 @@ a {
     border: var(--border);
   }
   &:hover {
-    background-color: white;
+    background-color: var(--accent-hover);
   }
   &[aria-current="page"] {
-    background-color: var(--color-beige);
+    background-color: var(--accent-current);
   }
 }
 
@@ -182,7 +186,7 @@ a {
   grid-template-columns: 1fr;
 }
 
-article {
+#content {
   padding: var(--space-medium);
   margin-inline: 10vw;
   margin-block: var(--space-xlarge);
@@ -197,22 +201,6 @@ article {
   gap: var(--space-xlarge);
   grid-template-columns: 1fr;
   grid-template-areas: "one" "two" "three" "four" "five";
-}
-
-.grid-cell-1 {
-  grid-area: one;
-}
-.grid-cell-2 {
-  grid-area: two;
-}
-.grid-cell-3 {
-  grid-area: three;
-}
-.grid-cell-4 {
-  grid-area: four;
-}
-.grid-cell-5 {
-  grid-area: five;
 }
 
 .grid-container-2 {
@@ -230,21 +218,20 @@ article {
 
 /* page background color */
 body {
-  background-color: blanchedalmond;
+  background-color: var(--color-background);
 }
 
 /* tags on start page */
 .radio-list-container {
   width: 100%;
-  margin-block-start: var(--space-xlarge);
+  margin-block: var(--space-xlarge);
 }
 
 .radio-list {
-  margin: var(--space-large);
   display: flex;
   flex-direction: column;
 }
-.radio-list li {
+.radio-list div {
   flex: 1 1 0;
   min-width: 0;
 }
@@ -280,7 +267,7 @@ body {
 
 /* Main heading */
 h1 {
-  color: maroon;
+  color: var(--color-heading);
   font-size: var(--fs-large);
   font-weight: bold;
   font-family: var(--ff-headings);
@@ -342,8 +329,7 @@ ol {
 }
 
 h1,
-h2,
-figcaption {
+h2 {
   margin-block: var(--space-medium);
 }
 
@@ -511,7 +497,7 @@ a.skiplink:focus {
 /* === DESKTOP RESPONSIVNESS === */
 
 @media (min-width: 768px) {
-  article {
+  #content {
     padding: var(--space-xlarge);
   }
 

@@ -28,86 +28,135 @@
     </header>
 
     <main>
-      <article id="content">
-      <h1>Dela ditt recept</h1>
-      <div class="summary">
-        <ul class="form-instructions">
-          <li>Alla fält som är markerade som obligatoriska måste fyllas i.</li>
-          <li>Receptets tid i minuter måste fyllas i som ett värde mellan 1 och 120 minuter.</li>
-          <li>Listan med ingredienser och receptets instruktioner får ha minst 10 och högst 400 tecken.</li>
-          <li>E-post måste vara en giltig e-postadress.</li>
-        </ul>
-      </div>
-      <form>
-        <fieldset>
-          <legend>Om receptet</legend>
-          <div class="form-group-recipe-name">
-            <label for="recipe-name">Receptets namn</label>
-            <input type="text" id="recipe-name" name="recipe-name" required>
-          </div>
-          <div>
-            <select id="category" name="category">
-            <option value="">Välj kategori</option>
-            <option value="breakfast">Frukost</option>
-            <option value="dinner">Middag</option>
-            <option value="dessert">Efterrätt</option>
-            <option value="fika">Fika</option>
-          </select>
-          </div>
-          <div class="recipe-details">
-            <div class="form-group">
-              <label for="time-required">Tid i minuter</label>
-              <input type="number" id="time-required" name="time-required" min="1" max="120">
-            </div>
-            <div class="form-group">
-              <label for="portions">Antal portioner</label>
-              <input type="number" id="portions" name="portions" min="1" max="6">
-            </div>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Svårighetsgrad</legend>
-          <ul class="radio-list">
+      <div id="content">
+        <h1>Dela ditt recept</h1>
+        <div class="summary">
+          <ul class="form-instructions">
             <li>
-            <label for="low">Lätt</label>
-            <input type="radio" id="easy" name="difficulty" value="low">
-          </li>
-          <li>
-            <label for="medium">Medel</label>
-            <input type="radio" id="medium" name="difficulty" value="medium">
-          </li>
-          <li>
-            <label for="high">Svår</label>
-            <input type="radio" id="hard" name="difficulty" value="hard">
-          </li>
+              Alla fält som är markerade som obligatoriska måste fyllas i.
+            </li>
+            <li>
+              Receptets tid i minuter måste fyllas i som ett värde mellan 1 och
+              120 minuter.
+            </li>
+            <li>
+              Listan med ingredienser och receptets instruktioner får ha minst
+              10 och högst 400 tecken.
+            </li>
+            <li>E-post måste vara en giltig e-postadress.</li>
           </ul>
-        </fieldset>
-        <fieldset>
-          <legend>Receptet</legend>
-          <div class="form-group-ingredients">
-            <label for="ingredients">Ingredienser</label>
-            <textarea id="ingredients" name="ingredients" required minlength="10" maxlength="400" rows="10"></textarea>
-          </div>
-          <div class="form-group-instructions">
-            <label for="instructions">Gör så här</label>
-            <textarea id="instructions" name="instructions" required minlength="10" maxlength="400" rows="10"></textarea>
-          </div>
-        </fieldset>
-        <fieldset>
-          <legend>Om dig</legend>
-          <div class="form-group">
-            <label for="submitter-name">Ditt namn</label>
-            <input type="text" id="submitter-name" name="submitter-name">
-          </div>
-          <div class="form-group-email">
-            <label for="submitter-email">E-post</label>
-            <input type="email" id="submitter-email" name="submitter-email" required>
-          </div>
-        </fieldset>
-        <input type="text" name="submit" aria-labelledby="submit-button" class="visuallyhidden">
-        <button type="submit" id="submit-button">Skicka recept</button>
-      </form>
-      </article>
+        </div>
+        <form action="" method="get">
+          <fieldset>
+            <legend>Om receptet</legend>
+            <div class="form-group-recipe-name">
+              <label for="recipe-name">Receptets namn</label>
+              <input type="text" id="recipe-name" name="recipe-name" required />
+            </div>
+            <div>
+              <select id="category" name="category">
+                <option value="">Välj kategori</option>
+                <option value="breakfast">Frukost</option>
+                <option value="dinner">Middag</option>
+                <option value="dessert">Efterrätt</option>
+                <option value="fika">Fika</option>
+              </select>
+            </div>
+            <div class="recipe-details">
+              <div class="form-group">
+                <label for="time-required">Tid i minuter</label>
+                <input
+                  type="number"
+                  id="time-required"
+                  name="time-required"
+                  min="1"
+                  max="120"
+                />
+              </div>
+              <div class="form-group">
+                <label for="portions">Antal portioner</label>
+                <input
+                  type="number"
+                  id="portions"
+                  name="portions"
+                  min="1"
+                  max="6"
+                />
+              </div>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Svårighetsgrad</legend>
+            <ul class="radio-list">
+              <li>
+                <label for="low">Lätt</label>
+                <input type="radio" id="easy" name="difficulty" value="low" />
+              </li>
+              <li>
+                <label for="medium">Medel</label>
+                <input
+                  type="radio"
+                  id="medium"
+                  name="difficulty"
+                  value="medium"
+                />
+              </li>
+              <li>
+                <label for="high">Svår</label>
+                <input type="radio" id="hard" name="difficulty" value="hard" />
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Receptet</legend>
+            <div class="form-group-ingredients">
+              <label for="ingredients">Ingredienser</label>
+              <textarea
+                id="ingredients"
+                name="ingredients"
+                required
+                minlength="10"
+                maxlength="400"
+                rows="10"
+              ></textarea>
+            </div>
+            <div class="form-group-instructions">
+              <label for="instructions">Gör så här</label>
+              <textarea
+                id="instructions"
+                name="instructions"
+                required
+                minlength="10"
+                maxlength="400"
+                rows="10"
+              ></textarea>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Om dig</legend>
+            <div class="form-group">
+              <label for="submitter-name">Ditt namn</label>
+              <input type="text" id="submitter-name" name="submitter-name" />
+            </div>
+            <div class="form-group-email">
+              <label for="submitter-email">E-post</label>
+              <input
+                type="email"
+                id="submitter-email"
+                name="submitter-email"
+                required
+              />
+            </div>
+          </fieldset>
+          <input
+            type="text"
+            name="submit"
+            aria-labelledby="submit-button"
+            class="visuallyhidden"
+          />
+          <button type="submit" id="submit-button">Skicka recept</button>
+        </form>
+      </div>
     </main>
     <footer class="margin-article-inline ffmain fss">
       <p>2024 Pannkakor AB</p>
